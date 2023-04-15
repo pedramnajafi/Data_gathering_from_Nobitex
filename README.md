@@ -12,7 +12,6 @@ by this code you can continiusely collect data from Nobitex website which is a c
         headers = {}
         response = requests.request("GET", url, headers=headers, data=payload)
         response_json = response.json()
-
         df = pd.DataFrame(response_json["trades"])
         df["time"] = pd.to_datetime(df["time"], unit='ms')
         df["time"] = df["time"].dt.tz_localize("UTC").dt.tz_convert("Asia/Tehran")
