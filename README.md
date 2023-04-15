@@ -7,7 +7,6 @@ by this code you can continiusely collect data from Nobitex website which is a c
     import time
     while True:
         current_df = pd.read_csv("database.csv")
-
         url = "https://api.nobitex.ir/v2/trades/BTCIRT"
         payload={}
         headers = {}
