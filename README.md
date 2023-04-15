@@ -19,6 +19,5 @@ by this code you can continiusely collect data from Nobitex website which is a c
         df.to_csv("database.csv", mode= "a", header= False, index= False)
         # To create the CSV file:
         # df.to_csv("database.csv", index = False)
-
         print("DONE")
         time.sleep(60)
