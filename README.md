@@ -10,7 +10,6 @@ by this code you can continiusely collect data from Nobitex website which is a c
         url = "https://api.nobitex.ir/v2/trades/BTCIRT"
         payload={}
         headers = {}
-
         response = requests.request("GET", url, headers=headers, data=payload)
         response_json = response.json()
 
