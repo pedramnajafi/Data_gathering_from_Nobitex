@@ -17,7 +17,6 @@ by this code you can continiusely collect data from Nobitex website which is a c
         df["time"] = df["time"].dt.tz_localize("UTC").dt.tz_convert("Asia/Tehran")
         df.drop_duplicates(inplace=True)
         df.to_csv("database.csv", mode= "a", header= False, index= False)
-
         # To create the CSV file:
         # df.to_csv("database.csv", index = False)
 
