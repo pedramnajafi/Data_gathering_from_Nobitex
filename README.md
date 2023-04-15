@@ -5,7 +5,6 @@ by this code you can continiusely collect data from Nobitex website which is a c
     import requests
     import pandas as pd
     import time
-
     while True:
         current_df = pd.read_csv("database.csv")
 
