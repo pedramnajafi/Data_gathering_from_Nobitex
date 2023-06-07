@@ -4,6 +4,7 @@ import time
 
 while True:
     current_df = pd.read_csv("database.csv")
+    
     url = "https://api.nobitex.ir/v2/trades/BTCIRT"
     payload={}
     headers = {}
