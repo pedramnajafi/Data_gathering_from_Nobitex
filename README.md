@@ -1,7 +1,6 @@
 # Data_gathering_from_Nobitex
 by this code you can continiusely collect data from Nobitex website which is a cryptocurrency exchange platform working in Iran
 
-
     import requests
     import pandas as pd
     import time
